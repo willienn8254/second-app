@@ -4,11 +4,12 @@ class CreateMovies < ActiveRecord::Migration
       t.string :name
       t.integer :duration
       t.integer :year
-      t.string :rating
+      t.integer :rating
       t.text :description
-      t.binary :image_url
+      t.string :image_url
 
       t.timestamps null: false
     end
   end
 end
+ 
